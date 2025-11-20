@@ -9,7 +9,7 @@ import gpxpy.gpx
 import polyline
 
 # Google Maps API key
-API_KEY = 'Your API_KEY here'
+API_KEY = 'YOUR_API_KEY_HERE'
 
 
 def get_coordinates(address):
@@ -41,7 +41,8 @@ def decode_polyline(polyline_str):
 
 
 def create_gpx(steps, destination_coords, pause):
-    """Create a GPX file from the route steps using waypoints (wpt) with timestamps."""
+    """Create a GPX file from the route steps using waypoints (wpt) with timestamps.
+    pause parameter is in minutes."""
     gpx = gpxpy.gpx.GPX()
     current_time = datetime.datetime.now()
 
@@ -63,8 +64,8 @@ def create_gpx(steps, destination_coords, pause):
         destination_coords[0], destination_coords[1], time=current_time))
 
     # Add additional waypoints at the destination to simulate a pause
-    pause_duration = pause * 3600
-    num_pause_points = pause * 60
+    pause_duration = pause * 60
+    num_pause_points = pause
 
     for _ in range(num_pause_points):
         current_time += datetime.timedelta(
@@ -82,7 +83,8 @@ def main():
     """
     origin_address = input("Enter the origin address: ")
     destination_address = input("Enter the destination address: ")
-    pause = int(input("Enter the number of hours to pause at the destination: "))
+    pause = int(
+        input("Enter the number of minutes to pause at the destination: "))
     # Get coordinates for origin and destination
     origin_coords = get_coordinates(origin_address)
     destination_coords = get_coordinates(destination_address)
