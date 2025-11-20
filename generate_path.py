@@ -3,13 +3,18 @@ Main script to create GPX file
 """
 import datetime
 import random
+import os
 import requests
 import gpxpy
 import gpxpy.gpx
 import polyline
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Google Maps API key
-API_KEY = 'YOUR_API_KEY_HERE'
+API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
 
 
 def get_coordinates(address):
@@ -94,8 +99,7 @@ def main():
     # Create GPX file
     gpx = create_gpx(steps, destination_coords, pause)
     # Save GPX file
-    path = "path to output file"
-    with open(path + "route.gpx", "w") as f:
+    with open("route.gpx", "w", encoding="utf-8") as f:
         f.write(gpx.to_xml())
     print("GPX file created successfully: route.gpx")
 

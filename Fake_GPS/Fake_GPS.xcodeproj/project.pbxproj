@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		294AB1522ECEA02700778504 /* route.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = route.gpx; path = ../route.gpx; sourceTree = "<group>"; };
 		29D975F72ECE94A6007830F2 /* Fake_GPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fake_GPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +33,7 @@
 		29D975EE2ECE94A6007830F2 = {
 			isa = PBXGroup;
 			children = (
+				294AB1522ECEA02700778504 /* route.gpx */,
 				29D975F92ECE94A6007830F2 /* Fake_GPS */,
 				29D975F82ECE94A6007830F2 /* Products */,
 			);
