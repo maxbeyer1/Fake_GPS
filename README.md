@@ -28,7 +28,7 @@ Spoof your iPhone's GPS location and simulate movement along routes using Xcode 
 Install required libraries:
 
 ```bash
-pip3 install gpxpy polyline
+pip install gpxpy polyline
 ```
 
 ### 3. Google Maps API
@@ -47,10 +47,10 @@ GOOGLE_MAPS_API_KEY=YOUR_API_KEY_HERE
    ```
    Enter the origin address: CN Tower, Toronto, Ontario
    Enter the destination address: CF Toronto Eaton Centre
-   Enter the number of hours to pause at the destination: 1
+   Enter the number of minutes to pause at the destination: 60
    ```
 
-2. The script generates `route.gpx` at your specified path
+2. The script generates `route.gpx` in the same directory.
 
 3. In Xcode, with your app running on the device:
 
