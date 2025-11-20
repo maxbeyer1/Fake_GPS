@@ -60,15 +60,6 @@ GOOGLE_MAPS_API_KEY=YOUR_API_KEY_HERE
 
 4. Your iPhone will now follow the simulated route
 
-## Python Script Structure
-
-The script includes functions to:
-
-- `get_coordinates(address)` - Geocode addresses to lat/lng
-- `get_route(origin, destination)` - Fetch driving directions
-- `create_gpx(steps, destination_coords, pause)` - Generate GPX file with timestamps
-- Simulate realistic movement speed and optional pause at destination
-
 ## Notes
 
 - The iPhone must remain connected to Xcode and running the app for location spoofing to work
@@ -77,4 +68,4 @@ The script includes functions to:
 
 ---
 
-_This project was inspired by an article: [INSERT LINK HERE]_
+_This project was inspired by an article: https://medium.com/@kabirplanes/building-an-iphone-gps-spoofer-with-xcode-python-e849c10d634d_
