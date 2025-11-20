@@ -9,7 +9,7 @@ Spoof your iOS device's GPS location and simulate movement along routes using Xc
 ## Requirements
 
 - Mac with Xcode
-- iPhone with Developer Mode enabled
+- iOS device with Developer Mode enabled
 - Google Maps API key (free tier sufficient)
 - Python 3 with `gpxpy` and `polyline` libraries
 
