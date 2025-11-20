@@ -1,10 +1,10 @@
-# iPhone GPS Spoofer
+# iOS GPS Spoofer
 
 **DISCLAIMER:** This project is intended strictly for educational, research, and development purposes. The techniques and code provided are designed to help developers simulate GPS locations in controlled environments for legitimate testing, debugging, or demonstration purposes. Misuse of this technology — such as employing it to deceive, commit fraud, or violate any local, state, or federal laws — is strictly prohibited. Always ensure that you comply with all applicable terms of service and legal regulations when using this tool.
 
 ## Overview
 
-Spoof your iPhone's GPS location and simulate movement along routes using Xcode and Python. The project consists of an Xcode app that runs on your iPhone and a Python script that generates GPX files using the Google Maps API.
+Spoof your iOS device's GPS location and simulate movement along routes using Xcode and Python.
 
 ## Requirements
 
